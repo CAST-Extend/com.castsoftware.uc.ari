@@ -1,0 +1,31 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\Users\nka\OneDrive\CAST\Projects\CastARIConnector\work\jobs\ari test\workspace
+Generating then Publishing the next 50 new action items for WebGoat on demotest
+Executing Windows Batch
+[workspace] $ cmd /c call C:\Users\nka\AppData\Local\Temp\hudson7208170524401950412.bat
+
+C:\Users\nka\OneDrive\CAST\Projects\CastARIConnector\work\jobs\ari test\workspace>java -jar C:\Users\nka\OneDrive\CAST\Projects\ari\target\ARI-CLI.jar  -generate -publish -host demotest -database postgres -port 2280 -user operator -password CastAIP -central_db webgoat_central -limit 50 -hf  changablity transferability 
+log4j:ERROR Could not read configuration file [log4j.properties].
+java.io.FileNotFoundException: log4j.properties (The system cannot find the file specified)
+	at java.io.FileInputStream.open0(Native Method)
+	at java.io.FileInputStream.open(FileInputStream.java:195)
+	at java.io.FileInputStream.<init>(FileInputStream.java:138)
+	at java.io.FileInputStream.<init>(FileInputStream.java:93)
+	at org.apache.log4j.PropertyConfigurator.doConfigure(PropertyConfigurator.java:372)
+	at org.apache.log4j.PropertyConfigurator.configure(PropertyConfigurator.java:403)
+	at com.castsoftware.tools.ARI.<init>(ARI.java:26)
+	at com.castsoftware.tools.ARI.main(ARI.java:71)
+log4j:ERROR Ignoring configuration file [log4j.properties].
+ARI-CLI v1.0.0
+(C) 2017, CAST Software, All Rights Reserved
+log4j:WARN No appenders could be found for logger (com.castsoftware.tools.util.InputParameters).
+log4j:WARN Please initialize the log4j system properly.
+log4j:WARN See http://logging.apache.org/log4j/1.2/faq.html#noconfig for more info.
+Generating Action Items for webgoat_central ... 7395 items generated
+Publishing 50 action items
+Filtering with [changablity, transferability] Health Factors
+There are now 75 Action Items 
+
+C:\Users\nka\OneDrive\CAST\Projects\CastARIConnector\work\jobs\ari test\workspace>exit 0 
+Build step 'CAST ARI Connector Plugin' changed build result to SUCCESS
+Finished: SUCCESS

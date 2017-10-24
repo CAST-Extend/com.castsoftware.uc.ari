@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<project>
+  <actions/>
+  <description></description>
+  <keepDependencies>false</keepDependencies>
+  <properties/>
+  <scm class="hudson.scm.NullSCM"/>
+  <canRoam>true</canRoam>
+  <disabled>false</disabled>
+  <blockBuildWhenDownstreamBuilding>false</blockBuildWhenDownstreamBuilding>
+  <blockBuildWhenUpstreamBuilding>false</blockBuildWhenUpstreamBuilding>
+  <triggers/>
+  <concurrentBuild>false</concurrentBuild>
+  <builders>
+    <com.castsoftware.jenkins.CastARIConnector.ARIBuilder plugin="CastARIConnector@1.0">
+      <ariLinkage>
+        <com.castsoftware.jenkins.CastARIConnector.ARILinkage>
+          <operation>Both generate and publish</operation>
+          <appName>WebGoat</appName>
+          <schemaName>webgoat_central</schemaName>
+          <limit>50</limit>
+          <changablity>true</changablity>
+          <efficiency>false</efficiency>
+          <transferability>true</transferability>
+          <security>false</security>
+          <robustness>false</robustness>
+        </com.castsoftware.jenkins.CastARIConnector.ARILinkage>
+      </ariLinkage>
+      <databaseHost>demotest</databaseHost>
+      <databaseName>postgres</databaseName>
+      <databasePort>2280</databasePort>
+      <castUserName>operator</castUserName>
+      <castUserPassword>CastAIP</castUserPassword>
+    </com.castsoftware.jenkins.CastARIConnector.ARIBuilder>
+  </builders>
+  <publishers/>
+  <buildWrappers/>
+</project>

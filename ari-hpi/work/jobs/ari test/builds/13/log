@@ -1,0 +1,17 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\Users\nka\OneDrive\CAST\Projects\CastARIConnector\work\jobs\ari test\workspace
+Generating then Publishing the next 50 new action items for WebGoat on demotest
+Executing Windows Batch
+[workspace] $ cmd /c call C:\Users\nka\AppData\Local\Temp\hudson94036932418549289.bat
+
+C:\Users\nka\OneDrive\CAST\Projects\CastARIConnector\work\jobs\ari test\workspace>java -jar C:\Users\nka\OneDrive\CAST\Projects\ari\target\ARI-CLI.jar  -generate -publish -host demotest -database postgres -port 2280 -user operator -password CastAIP -central_db webgoat_central -limit 50 -hf  changablity transferability 
+ARI-CLI v1.0.0
+(C) 2017, CAST Software, All Rights Reserved
+Generating Action Items for webgoat_central ... 7395 items generated
+Publishing 50 action items
+Filtering with [changablity, transferability] Health Factors
+There are now 75 Action Items 
+
+C:\Users\nka\OneDrive\CAST\Projects\CastARIConnector\work\jobs\ari test\workspace>exit 0 
+Build step 'CAST ARI Connector Plugin' changed build result to SUCCESS
+Finished: SUCCESS

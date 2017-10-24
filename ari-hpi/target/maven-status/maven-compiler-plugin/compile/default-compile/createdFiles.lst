@@ -1,0 +1,15 @@
+com\castsoftware\jenkins\CastARIConnector\ARIBuilder\DescriptorImpl\doCheckDatabasePort.stapler
+com\castsoftware\jenkins\CastARIConnector\ARIBuilder.class
+com\castsoftware\jenkins\CastARIConnector\ARILinkage.stapler
+com\castsoftware\jenkins\CastARIConnector\ARILinkage$DescriptorImpl.class
+com\castsoftware\jenkins\CastARIConnector\ARIBuilder\DescriptorImpl\doCheckDatabaseHost.stapler
+com\castsoftware\jenkins\CastARIConnector\ARIBuilder\DescriptorImpl\doFillAppNameItems.stapler
+com\castsoftware\jenkins\CastARIConnector\ARIBuilder\DescriptorImpl\doFillSchemaNameItems.stapler
+com\castsoftware\jenkins\CastARIConnector\ARIBuilder\DescriptorImpl\doCheckDatabaseName.stapler
+com\castsoftware\jenkins\CastARIConnector\ARIBuilder\DescriptorImpl\doCheckCastUserPassword.stapler
+com\castsoftware\jenkins\CastARIConnector\ARIBuilder\DescriptorImpl\doCheckCastUserName.stapler
+com\castsoftware\jenkins\CastARIConnector\ARIBuilder\DescriptorImpl\doTestDatabaseConnection.stapler
+com\castsoftware\jenkins\CastARIConnector\ARILinkage.class
+com\castsoftware\jenkins\CastARIConnector\ARIBuilder.stapler
+com\castsoftware\jenkins\CastARIConnector\ARIBuilder$DescriptorImpl.class
+META-INF\annotations\hudson.Extension

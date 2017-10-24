@@ -1,0 +1,52 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+	<f:section title="CAST Database Connection Setup">
+		<f:entry title="Database Host:" field="databaseHost">
+			<f:textbox />
+		</f:entry>
+		<f:entry title="Database Name:" field="databaseName" default="postgres">
+			<f:textbox />
+		</f:entry>
+		<f:entry title="Database Port:" field="databasePort">
+			<f:textbox />
+		</f:entry>
+		<f:entry title="Cast User Name:" field="castUserName">
+			<f:textbox />
+		</f:entry>
+		<f:entry title="Cast User Password:" field="castUserPassword">
+		<f:password  />
+			</f:entry>
+		<f:validateButton title="Test CAST Connection" progress="Testing..." method="testDatabaseConnection" with="useDatabase,databaseHost,databaseName,databasePort,castUserName,castUserPassword"/>		
+	</f:section>
+	
+	<f:section title="ARI Applications">
+	<f:entry title="Project Mapping">
+		<table width="100%">
+			<f:repeatable var="ariLinkage" items="${instance.ariLinkage}" add="Add Link"  minimum="1">
+					<p><label><b>Operation: </b></label>
+					<select name="operation">
+						<j:forEach var="type" items="Generate,Publish, Both generate and publish">
+							<f:option selected="${type==ariLinkage.getOperation()}" value="${type}">${type}</f:option>
+						</j:forEach>
+					</select></p>
+			
+		  		<label><b>CAST schema</b></label>
+		  		<f:select field="schemaName" value="${ariLinkage.schemaName}"/> 	  		
+		  		<label><b>and Application</b></label>
+		  		<f:select field="appName"  value="${ariLinkage.appName}"/> 	  		
+		  		<label><b>Limit the number of action items to </b></label>
+		  		<f:textbox field="limit"  value="${ariLinkage.limit}"/> 
+		  		
+	    		<f:checkbox name="changablity" title="Changablity  |" checked="${ariLinkage.changablity}"/>    
+	    		<f:checkbox name="efficiency" title="Efficiency  |" checked="${ariLinkage.efficiency}"/>    
+	    		<f:checkbox name="transferability" title="Transferability  |" checked="${ariLinkage.transferability}"/>    
+	    		<f:checkbox name="security" title="Security  |" checked="${ariLinkage.security}"/>    
+	    		<f:checkbox name="robustness" title="Robustness" checked="${ariLinkage.robustness}"/>    
+		  		
+	
+		  				  			  		
+			</f:repeatable>
+			</table>
+		</f:entry>
+  </f:section>
+</j:jelly>

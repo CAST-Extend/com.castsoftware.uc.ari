@@ -1,0 +1,10 @@
+com\castsoftware\tools\bean\ViewerActionPlansBean.class
+com\castsoftware\tools\ARI.class
+com\castsoftware\tools\dao\AriStagingDao.class
+com\castsoftware\tools\util\Constants.class
+com\castsoftware\tools\bean\AriStagingBean.class
+com\castsoftware\tools\bean\BaseBean.class
+com\castsoftware\tools\util\DatabaseConnection.class
+com\castsoftware\tools\dao\BaseDAO.class
+com\castsoftware\tools\util\Item.class
+com\castsoftware\tools\util\InputParameters.class

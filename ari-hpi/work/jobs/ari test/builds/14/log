@@ -1,0 +1,13 @@
+Started by user [8mha:AAAAlh+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzOEgYu/dLi1CL9vNKcHACFIKlWvwAAAA==[0manonymous
+Building in workspace C:\Users\nka\OneDrive\CAST\Projects\CastARIConnector\work\jobs\ari test\workspace
+Generating then Publishing the next 50 new action items for WebGoat on demotest
+Executing Windows Batch
+[workspace] $ cmd /c call C:\Users\nka\AppData\Local\Temp\hudson7894365344625251379.bat
+ARI-CLI v1.0.0
+(C) 2017, CAST Software, All Rights Reserved
+Generating Action Items for webgoat_central ... 7395 items generated
+Publishing 50 action items
+Filtering with [changablity, transferability] Health Factors
+There are now 125 Action Items 
+Build step 'CAST ARI Connector Plugin' changed build result to SUCCESS
+Finished: SUCCESS

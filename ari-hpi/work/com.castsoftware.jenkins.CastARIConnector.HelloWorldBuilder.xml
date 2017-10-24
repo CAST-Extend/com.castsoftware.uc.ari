@@ -1,0 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<com.castsoftware.jenkins.CastARIConnector.HelloWorldBuilder_-DescriptorImpl plugin="CastARIConnector@1.0">
+  <ARIExportLoc>C:\\Users\\nka\\OneDrive\\CAST\\Projects\\ari\\target</ARIExportLoc>
+</com.castsoftware.jenkins.CastARIConnector.HelloWorldBuilder_-DescriptorImpl>
