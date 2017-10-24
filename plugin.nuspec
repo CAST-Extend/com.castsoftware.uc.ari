@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2010/07/nuspec.xsd">
+    <metadata>
+        <id>com.castsoftware.uc.ari</id>
+        <version>1.0.0</version>
+        <title>Automated Recommendations for Improvement - an automated list of application quality improvement recommendations to review, prioritize or exclude. It is a simple extension to CAST AIP, built to optimize the impact on the CAST Quality Health Factor score, Technical Debt and mitigate the overall risk profile of the target software application.</title>
+        <authors>n.kaplan@castsoftware.com</authors>
+        <owners>CAST</owners>
+        <licenseUrl>https://extend.castsoftware.com/V2/Licenses/Cast-Licence-Product-1.0.html</licenseUrl>
+        <projectUrl>https://github.com/CAST-Extend/com.castsoftware.uc.ari/wiki</projectUrl>
+        <requireLicenseAcceptance>false</requireLicenseAcceptance>
+        <description>ARI (Automated Recommendations for Improvement) is an automated list of application quality improvement recommendations to review, prioritize or exclude. It is a simple extension to CAST AIP, built to optimize the impact on the CAST Quality Health Factor score, Technical Debt and mitigate the overall risk profile of the target software application. It is fully integrated with the CED/AED and generates an action plan in CAST API and is designed to ease remediation of violations in AIP analysis by proposing a set of pre-selected improvement opportunities. Additionally, it also provides an option to then automatically extract the action plan items and upload to an issue management system, such as JIRA, which can then be integrated into the application developers’ IDE. This document provides information about installing and implementing ARI in your environment.</description>
+        <tags>ARI CDH</tags>
+        <dependencies>
+            <dependency id="CAIP" version="8.0.0" />
+        </dependencies>
+    </metadata>
+    <files />
+</package>
