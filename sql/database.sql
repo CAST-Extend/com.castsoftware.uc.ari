@@ -103,7 +103,7 @@ CREATE OR REPLACE FUNCTION cast_xapp_tools.ari_insert_ap_items(
 	source_schema character varying,
 	health_factors integer[],
 	ap_limit integer DEFAULT 99999)
-RETURNS SETOF "TABLE(metric_id integer, object_id integer, first_snapshot_date timestamp without time zone, last_snapshot_date timestamp without time zone, user_name character varying, sel_date timestamp without time zone, priority integer, action_def character varying)"
+RETURNS TABLE(metric_id integer, object_id integer, first_snapshot_date timestamp without time zone, last_snapshot_date timestamp without time zone, user_name character varying, sel_date timestamp without time zone, priority integer, action_def character varying)
     LANGUAGE 'plpgsql'
     COST 100.0
     VOLATILE NOT LEAKPROOF 
@@ -135,7 +135,7 @@ BEGIN
    insert into viewer_action_plans 
      select sub.metric_id,sub.object_id,sub.snapshot_date,sub.last_snapshot_date,'input',sub.sel_date,sub.ap_priority,sub.source_opt 
 from 
- (select ari.metric_id,row_number() over (partition by metric_id) rownum,ari.object_id,ari.snapshot_date,ari.create_date as last_snapshot_date,'input',ari.create_date as sel_date,ari.ap_priority,ari.source_opt 
+ (select ari.metric_id,row_number() over (partition by ari.metric_id) rownum,ari.object_id,ari.snapshot_date,ari.create_date as last_snapshot_date,'input',ari.create_date as sel_date,ari.ap_priority,ari.source_opt 
 	   from ari_master ari
 	  where not exists (select 1 from viewer_action_plans vap 
 			     where vap.metric_id = ari.metric_id

@@ -5,7 +5,7 @@
 
 	<groupId>com.castsoftware.tools</groupId>
 	<artifactId>ari-cli</artifactId>
-	<version>1.0.0</version>
+	<version>1.1</version>
 	<name>ari-cli</name>
 	<properties>
 		<java.version>1.8</java.version>
@@ -60,9 +60,9 @@
 								true
 							</addDefaultImplementationEntries>
 						</manifest>
-            <manifestEntries>
-                <Class-Path>.</Class-Path>
-            </manifestEntries>
+						<manifestEntries>
+							<Class-Path>.</Class-Path>
+						</manifestEntries>
 					</archive>
 					<descriptorRefs>
 						<descriptorRef>jar-with-dependencies</descriptorRef>

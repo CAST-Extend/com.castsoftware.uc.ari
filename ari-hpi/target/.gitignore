@@ -1,0 +1,13 @@
+/CastARIConnector/
+/classes/
+/eclipse/classes/
+/generated-source/
+/maven-status/
+/site/
+/test-classes/
+/tmp/
+/generated-test-sources/
+/eclipse-classes/
+/generated-sources/
+/javadoc-bundle-options/
+/jenkins-for-test/
